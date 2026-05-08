@@ -1,6 +1,0 @@
-{
-    "ST": "rtRequest(Clk:=bRequest);\ntDoorOpen(In:=bDoorLatch,PT:=T#5S);\ntStop(In:=NOT Machine_Data.OUT.bRunning,PT:=T#0.5S);\nIF rtRequest.Q AND Machine_Data.OUT.bRunning AND Machine_Data.IN.bDoorClosed AND NOT tDoorOpen.Q THEN\n bCanOpen:=TRUE;\nELSIF tDoorOpen.Q THEN\n      bCanOpen:=FALSE;\nEND_IF;\nbDoorLock:=bCanOpen OR tStop.Q;\nbRequestLight:=bDoorLock;",
-    "内部变量": "名称\t数据类型\t初始值\t分配到\t保持\t常量\t注释\nrtRequest\tR_TRIG\tFalse\tFalse\ntDoorOpen\tTON\tFalse\tFalse\ntStop\tTON\tFalse\tFalse\nbCanOpen\tbool\tFalse\tFalse",
-    "输入输出": "名称\t输入/输出\t数据类型\t边沿\t初始值\t保持\t常量\nbRequest\t输入\tBOOL\t无边沿\tFalse\tFalse\nbDoorLatch\t输入\tBOOL\t无边沿\tFalse\tFalse\nbDoorLock\t输出\tBOOL\t无边沿\tFalse\tFalse\nbRequestLight\t输出\tBOOL\t无边沿\tFalse\tFalse",
-    "外部变量": "名称\t数据类型\t常量\t注释\nMachine_Data\tST_Machine"
-}

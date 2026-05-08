@@ -1,4 +1,0 @@
-﻿axis_index,axis_id,axis_name,point_no,point_name,position,unit,velocity,description
-1,AX1,X轴,1,上料位,0.0,mm,200.0,X轴 点位 上料位
-1,AX1,X轴,2,扫码位,120.0,mm,200.0,X轴 点位 扫码位
-1,AX1,X轴,3,下料位,300.0,mm,200.0,X轴 点位 下料位

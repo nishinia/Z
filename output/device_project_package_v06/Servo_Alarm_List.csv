@@ -1,5 +1,0 @@
-﻿alarm_no,level,axis_id,axis_name,alarm_name,trigger_condition,reset_method,hmi_message
-4101,Error,AX1,X轴,伺服报警,Axis[1].bAlarm = TRUE,排除伺服故障后复位,X轴 伺服报警
-4102,Error,AX1,X轴,未回零禁止定位,Axis[1].bMoveAbs = TRUE AND Axis[1].bHomeDone = FALSE,先执行回零,X轴 未回零，禁止定位
-4103,Error,AX1,X轴,轴运动超时,Axis[1].bBusy 超时,检查机械阻力、限位、驱动器,X轴 运动超时
-4104,Warning,AX1,X轴,急停轴停止,Machine_Data.IN.bEstop = TRUE,解除急停后复位,X轴 急停停止
