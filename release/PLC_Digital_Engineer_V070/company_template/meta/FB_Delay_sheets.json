@@ -1,0 +1,6 @@
+{
+    "ST": "tDelayON(In:=bIN, PT:=Sensoe.tParaON, Q=>Sensoe.bON); \ntDelayOFF(IN:=NOT bIN, PT:=Sensoe.tParaOFF, Q=>Sensoe.bOFF);",
+    "内部变量": "名称\t数据类型\t初始值\t分配到\t保持\t常量\t注释\ntDelayON\tTON\tFalse\tFalse\tON延时\ntDelayOFF\tTON\tFalse\tFalse\tOFF延时",
+    "输入输出": "名称\t输入/输出\t数据类型\t边沿\t初始值\t保持\t常量\nbIN\t输入\tBOOL\t无边沿\tFalse\tFalse\nSensoe\t输入/输出\tST_Sensor\t无边沿\tFalse\tFalse\t输入信号",
+    "外部变量": "名称\t数据类型\t常量\t注释"
+}

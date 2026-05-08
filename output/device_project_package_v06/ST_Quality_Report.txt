@@ -1,0 +1,46 @@
+ST Quality Report - V0.6.3
+================================================================================
+Generated At: 2026-05-08 06:49:17
+Package Dir : D:\AI\plc_ai_system\output\device_project_package_v06
+
+一、必要 ST 文件检查
+✅ 存在：00_DUT_Struct_Generated.st
+✅ 存在：00_Global_Variables_Generated.st
+✅ 存在：01_Cylinder_Action_Generated.st
+✅ 存在：04_Machine_Auto_Main_Generated.st
+✅ 检测到工站 ST 文件数量：2
+
+二、整机主流程关键词检查
+✅ 整机主流程包含：整机就绪 / Machine_Auto.bReady
+✅ 整机主流程包含：整机允许运行 / Machine_Auto.bCanRun
+✅ 整机主流程包含：报警汇总 / Machine_Auto.bAnyStationAlarm
+✅ 整机主流程包含：统一复位 / Machine_Data.IN.bReset
+✅ 整机主流程包含：整机完成 / Machine_Auto.bComplete
+✅ 检测到后续工站等待前工站 Done 的互锁逻辑
+
+三、DUT / 全局变量检查
+✅ DUT 包含：ST_StationAuto
+✅ DUT 包含：ST_MachineAuto
+✅ DUT 包含：ST_MachineAlarm
+✅ DUT 包含：ST_MachineData
+✅ DUT 包含：ST_CylinderIO
+✅ 全局变量包含：VAR_GLOBAL
+✅ 全局变量包含：Machine_Auto
+✅ 全局变量包含：Machine_Data
+✅ 全局变量包含：Machine_Alarm
+✅ 全局变量包含：Station : ARRAY
+✅ 全局变量包含：CylinderIO
+
+四、工站程序步号粗检查
+✅ 02_Station_S1_Auto_Generated.st 检测到步号赋值：999, 10, 20, 999, 30, 999, 10, 10, 999
+✅ 02_Station_S1_Auto_Generated.st 包含报警关键词
+✅ 03_Station_S2_Auto_Generated.st 检测到步号赋值：999, 10, 20, 10, 999
+✅ 03_Station_S2_Auto_Generated.st 包含报警关键词
+
+五、结论
+OK: 26
+WARNING: 0
+ERROR: 0
+✅ V0.6.3 ST 质量检查通过：未发现致命缺失。
+
+说明：本报告是静态检查报告，不能替代 Sysmac Studio 编译、仿真和现场调试。

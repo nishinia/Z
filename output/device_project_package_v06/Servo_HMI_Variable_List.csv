@@ -1,0 +1,15 @@
+﻿category,variable,chinese_name,data_type,access,description
+X轴,Axis[1].bServoOn,X轴 伺服使能,BOOL,ReadWrite,HMI伺服使能命令
+X轴,Axis[1].bHome,X轴 回零命令,BOOL,ReadWrite,HMI回零命令
+X轴,Axis[1].bHomeDone,X轴 回零完成,BOOL,Read,轴回零完成状态
+X轴,Axis[1].bJogPositive,X轴 正向点动,BOOL,ReadWrite,HMI正向点动
+X轴,Axis[1].bJogNegative,X轴 反向点动,BOOL,ReadWrite,HMI反向点动
+X轴,Axis[1].bMoveAbs,X轴 绝对定位,BOOL,ReadWrite,HMI绝对定位命令
+X轴,Axis[1].bStop,X轴 停止,BOOL,ReadWrite,HMI停止命令
+X轴,Axis[1].bBusy,X轴 运行中,BOOL,Read,轴运行中
+X轴,Axis[1].bDone,X轴 完成,BOOL,Read,轴动作完成
+X轴,Axis[1].bAlarm,X轴 报警,BOOL,Read,轴报警
+X轴,Axis[1].nAlarmNo,X轴 报警号,INT,Read,轴报警编号
+X轴,Axis[1].rActualPosition,X轴 实际位置,LREAL,Read,轴实际位置
+X轴,Axis[1].rTargetPosition,X轴 目标位置,LREAL,ReadWrite,轴目标位置
+X轴,Axis[1].rVelocity,X轴 速度,LREAL,ReadWrite,轴速度

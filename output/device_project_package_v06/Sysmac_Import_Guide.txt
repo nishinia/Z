@@ -1,0 +1,28 @@
+Sysmac Studio 导入说明 - V0.6.3
+================================================================================
+
+一、推荐导入顺序
+1. 先导入或手动创建 DUT：00_DUT_Struct_Generated.st
+2. 再导入或手动创建全局变量：00_Global_Variables_Generated.st
+3. 导入模板功能块：template_source 目录下的 FB / ST 文件
+4. 导入气缸动作程序：01_Cylinder_Action_Generated.st
+5. 导入各工站程序：02_Station_*.st、03_Station_*.st ...
+6. 最后导入整机主流程：04_Machine_Auto_Main_Generated.st
+
+二、需要人工确认的内容
+- IO_Mapping_List.csv 中的实际 IO 地址是否正确
+- Station 数组长度是否满足实际工站数量
+- CylinderIO / CylinderCtrl 数组长度是否满足实际气缸数量
+- 报警号是否符合客户标准
+- 自动流程步号是否符合公司编程规范
+
+三、当前工站链路
+S1(S1_上料工站) -> S2(S2_搬运工站)
+
+四、当前气缸清单
+- 1: CY1 / CY1气缸
+- 2: CY2 / CY2气缸
+
+五、重要说明
+本工具生成的是 Sysmac Studio 导入前的工程文本包。
+正式上机前必须由 PLC 工程师完成 IO 绑定、仿真验证、单步调试和安全确认。

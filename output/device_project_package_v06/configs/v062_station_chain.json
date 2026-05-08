@@ -1,0 +1,16 @@
+{
+    "version": "V0.6.2.1",
+    "generated_at": "2026-05-08 06:49:17",
+    "station_chain": [
+        {
+            "station_id": "S1",
+            "station_name": "S1_上料工站",
+            "station_index": 1
+        },
+        {
+            "station_id": "S2",
+            "station_name": "S2_搬运工站",
+            "station_index": 2
+        }
+    ]
+}

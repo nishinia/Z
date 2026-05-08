@@ -1,0 +1,105 @@
+{
+    "project_info": {
+        "project_name": "AI_Device_Project_V05",
+        "plc": "Omron NJ501",
+        "description": "项目说明"
+    },
+    "cylinder_config": {
+        "cylinders": [
+            {
+                "instance": "CY1",
+                "data": "Cylinder_Data.CY1",
+                "desc": "气缸描述",
+                "hp_sensor": "(I1_0 AND I1_3)",
+                "wp_sensor": "(I1_1 AND I1_4)",
+                "hp_valve": "Q1_7",
+                "wp_valve": "Q1_6",
+                "on_ilc": "TRUE",
+                "off_ilc": "TRUE"
+            },
+            {
+                "instance": "CY2",
+                "data": "Cylinder_Data.CY2",
+                "desc": "气缸描述",
+                "hp_sensor": "I2_0",
+                "wp_sensor": "I2_1",
+                "hp_valve": "Q2_0",
+                "wp_valve": "Q2_1",
+                "on_ilc": "TRUE",
+                "off_ilc": "TRUE"
+            }
+        ]
+    },
+    "station_config": {
+        "program_name": "S1_Auto_Generated",
+        "station_name": "S1_工站名称",
+        "station_num": 1,
+        "safety_stop_actions": [
+            "Cylinder_Data.CY1.Input.bAuto:=FALSE",
+            "Cylinder_Data.CY2.Input.bAuto:=FALSE"
+        ],
+        "steps": [
+            {
+                "step": 0,
+                "title": "INIT 初始化",
+                "actions": [
+                    "Cylinder_Data.CY1.Input.bAuto:=FALSE",
+                    "Cylinder_Data.CY2.Input.bAuto:=FALSE"
+                ],
+                "next_condition": "bRunAble",
+                "next_step": 10
+            },
+            {
+                "step": 10,
+                "title": "等待启动",
+                "actions": [],
+                "next_condition": "bRunAble AND Station[_StationNum].bRunning",
+                "next_step": 20
+            },
+            {
+                "step": 20,
+                "title": "CY1 到动点",
+                "actions": [
+                    "Cylinder_Data.CY1.Input.bAuto:=TRUE"
+                ],
+                "next_condition": "Cylinder_Data.CY1.Output.bWP_Delay",
+                "next_step": 30,
+                "timeout_ms": 3000,
+                "alarm_no": 20
+            },
+            {
+                "step": 30,
+                "title": "CY2 到动点",
+                "actions": [
+                    "Cylinder_Data.CY2.Input.bAuto:=TRUE"
+                ],
+                "next_condition": "Cylinder_Data.CY2.Output.bWP_Delay",
+                "next_step": 40,
+                "timeout_ms": 3000,
+                "alarm_no": 30
+            },
+            {
+                "step": 40,
+                "title": "CY2 回原点",
+                "actions": [
+                    "Cylinder_Data.CY2.Input.bAuto:=FALSE"
+                ],
+                "next_condition": "Cylinder_Data.CY2.Output.bHP_Delay",
+                "next_step": 50,
+                "timeout_ms": 3000,
+                "alarm_no": 40
+            },
+            {
+                "step": 50,
+                "title": "CY1 回原点",
+                "actions": [
+                    "Cylinder_Data.CY1.Input.bAuto:=FALSE"
+                ],
+                "next_condition": "Cylinder_Data.CY1.Output.bHP_Delay",
+                "is_complete": true,
+                "timeout_ms": 3000,
+                "alarm_no": 50
+            }
+        ]
+    }
+}

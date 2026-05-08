@@ -1,0 +1,23 @@
+﻿category,variable,chinese_name,data_type,access,description
+Machine,Machine_Data.IN.bEstop,急停输入,BOOL,Read,整机急停状态
+Machine,Machine_Data.IN.bSafety,安全门/安全回路,BOOL,Read,安全条件
+Machine,Machine_Data.IN.bAirOn,气源正常,BOOL,Read,气压/气源状态
+Machine,Machine_Data.IN.bReset,复位按钮,BOOL,Read,整机复位输入
+Machine,Machine_Auto.bReady,整机就绪,BOOL,Read,安全、气源、急停均满足
+Machine,Machine_Auto.bCanRun,整机允许运行,BOOL,Read,整机就绪且无工站报警
+Machine,Machine_Auto.bAnyStationAlarm,任意工站报警,BOOL,Read,所有工站报警汇总
+Machine,Machine_Auto.bComplete,整机完成,BOOL,Read,最后一个工站完成
+S1,Station[1].nAutoStep,S1_上料工站 当前步号,INT,Read,工站自动流程步号
+S1,Station[1].bEnable,S1_上料工站 运行许可,BOOL,Read,由整机主流程生成的工站使能
+S1,Station[1].bRunning,S1_上料工站 运行中,BOOL,Read,工站运行状态
+S1,Station[1].bDone,S1_上料工站 完成,BOOL,Read,工站流程完成
+S1,Station[1].bEstop,S1_上料工站 停止/禁止,BOOL,Read,工站被整机互锁禁止
+S1,Machine_Alarm.StationAlarm[1].Alarm,S1_上料工站 报警,BOOL,Read,工站报警状态
+S1,Machine_Alarm.StationAlarm[1].AlarmNo,S1_上料工站 报警号,INT,Read,工站报警编号
+S2,Station[2].nAutoStep,S2_搬运工站 当前步号,INT,Read,工站自动流程步号
+S2,Station[2].bEnable,S2_搬运工站 运行许可,BOOL,Read,由整机主流程生成的工站使能
+S2,Station[2].bRunning,S2_搬运工站 运行中,BOOL,Read,工站运行状态
+S2,Station[2].bDone,S2_搬运工站 完成,BOOL,Read,工站流程完成
+S2,Station[2].bEstop,S2_搬运工站 停止/禁止,BOOL,Read,工站被整机互锁禁止
+S2,Machine_Alarm.StationAlarm[2].Alarm,S2_搬运工站 报警,BOOL,Read,工站报警状态
+S2,Machine_Alarm.StationAlarm[2].AlarmNo,S2_搬运工站 报警号,INT,Read,工站报警编号

@@ -1,0 +1,13 @@
+﻿category,device_id,device_name,signal_name,variable,raw_io_address,parsed_io_type,unit,point,channel,valid_format,description
+Machine,MACHINE,整机,急停,Machine_Data.IN.bEstop,,,,,,False,急停输入
+Machine,MACHINE,整机,安全回路,Machine_Data.IN.bSafety,,,,,,False,安全回路输入
+Machine,MACHINE,整机,气源正常,Machine_Data.IN.bAirOn,,,,,,False,气源压力输入
+Machine,MACHINE,整机,复位按钮,Machine_Data.IN.bReset,,,,,,False,复位按钮输入
+Cylinder,CY1,CY1气缸,原点传感器,CylinderIO[1].bOriginSensor,,,,,,False,气缸原点到位输入
+Cylinder,CY1,CY1气缸,动点传感器,CylinderIO[1].bWorkSensor,,,,,,False,气缸动点到位输入
+Cylinder,CY1,CY1气缸,原点电磁阀,CylinderIO[1].bOriginValve,,,,,,False,气缸回原点输出
+Cylinder,CY1,CY1气缸,动点电磁阀,CylinderIO[1].bWorkValve,,,,,,False,气缸到动点输出
+Cylinder,CY2,CY2气缸,原点传感器,CylinderIO[2].bOriginSensor,,,,,,False,气缸原点到位输入
+Cylinder,CY2,CY2气缸,动点传感器,CylinderIO[2].bWorkSensor,,,,,,False,气缸动点到位输入
+Cylinder,CY2,CY2气缸,原点电磁阀,CylinderIO[2].bOriginValve,,,,,,False,气缸回原点输出
+Cylinder,CY2,CY2气缸,动点电磁阀,CylinderIO[2].bWorkValve,,,,,,False,气缸到动点输出

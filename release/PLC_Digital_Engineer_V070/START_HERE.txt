@@ -1,0 +1,12 @@
+PLC数字工程师 V0.7.0
+
+启动方式：
+
+1. 确认电脑已安装 Python、Streamlit 和项目依赖。
+2. 双击 start_plc_digital_engineer_v070.bat。
+3. 或在命令行运行：
+
+cd /d D:\AI\plc_ai_system
+streamlit run app_product.py
+
+sample_output 目录里是示例生成的最终工程包。

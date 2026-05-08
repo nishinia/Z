@@ -1,0 +1,38 @@
+Final Acceptance Report - V0.6.4
+================================================================================
+Generated At: 2026-05-08 06:49:17
+Package Dir : D:\AI\plc_ai_system\output\device_project_package_v06
+
+一、工程概况
+工站数量：2
+气缸数量：2
+工站链路：S1 -> S2
+
+二、交付文件检查
+✅ 00_README.txt
+✅ validation_report.txt
+✅ 00_DUT_Struct_Generated.st
+✅ 00_Global_Variables_Generated.st
+✅ 01_Cylinder_Action_Generated.st
+✅ 04_Machine_Auto_Main_Generated.st
+✅ HMI_Variable_List.csv
+✅ IO_Mapping_List.csv
+✅ IO_Mapping_Enhanced.csv
+✅ Alarm_List.csv
+✅ Step_List.csv
+✅ Variable_CrossReference_Report.txt
+✅ Sysmac_Import_Guide.txt
+✅ ST_Quality_Report.txt
+
+三、V0.6.4 新增交付物
+✅ Alarm_List.csv：报警清单
+✅ Step_List.csv：工站步骤清单
+✅ IO_Mapping_Enhanced.csv：增强 IO 映射
+✅ Variable_CrossReference_Report.txt：变量交叉引用报告
+✅ Final_Acceptance_Report.txt：最终验收报告
+
+四、结论
+PASS: V0.6.4 工程包静态验收通过。
+
+注意：静态验收通过不代表可直接上机。
+正式投产前必须完成 Sysmac Studio 编译、仿真、IO 点检、单步调试和安全验证。

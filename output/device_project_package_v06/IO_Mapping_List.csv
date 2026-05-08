@@ -1,0 +1,13 @@
+﻿category,device_id,device_name,signal_name,variable,io_address,data_type,description
+Machine,MACHINE,整机,急停,Machine_Data.IN.bEstop,,BOOL,急停输入，需人工绑定实际IO
+Machine,MACHINE,整机,安全回路,Machine_Data.IN.bSafety,,BOOL,安全门/安全继电器状态，需人工绑定实际IO
+Machine,MACHINE,整机,气源正常,Machine_Data.IN.bAirOn,,BOOL,气压开关，需人工绑定实际IO
+Machine,MACHINE,整机,复位按钮,Machine_Data.IN.bReset,,BOOL,复位按钮，需人工绑定实际IO
+Cylinder,CY1,CY1气缸,原点传感器,CylinderIO[1].bOriginSensor,,BOOL,气缸原点到位输入
+Cylinder,CY1,CY1气缸,动点传感器,CylinderIO[1].bWorkSensor,,BOOL,气缸动点到位输入
+Cylinder,CY1,CY1气缸,原点电磁阀,CylinderIO[1].bOriginValve,,BOOL,气缸回原点输出
+Cylinder,CY1,CY1气缸,动点电磁阀,CylinderIO[1].bWorkValve,,BOOL,气缸到动点输出
+Cylinder,CY2,CY2气缸,原点传感器,CylinderIO[2].bOriginSensor,,BOOL,气缸原点到位输入
+Cylinder,CY2,CY2气缸,动点传感器,CylinderIO[2].bWorkSensor,,BOOL,气缸动点到位输入
+Cylinder,CY2,CY2气缸,原点电磁阀,CylinderIO[2].bOriginValve,,BOOL,气缸回原点输出
+Cylinder,CY2,CY2气缸,动点电磁阀,CylinderIO[2].bWorkValve,,BOOL,气缸到动点输出

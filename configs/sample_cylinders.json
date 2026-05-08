@@ -1,0 +1,26 @@
+{
+    "cylinders": [
+        {
+            "instance": "CY1",
+            "data": "Cylinder_Data.CY1",
+            "desc": "拨料上下气缸",
+            "hp_sensor": "I1_0 AND I1_3",
+            "wp_sensor": "I1_1 AND I1_4",
+            "hp_valve": "Q1_7",
+            "wp_valve": "Q1_6",
+            "on_ilc": "TRUE",
+            "off_ilc": "TRUE"
+        },
+        {
+            "instance": "CY2",
+            "data": "Cylinder_Data.CY2",
+            "desc": "测试气缸",
+            "hp_sensor": "I2_0",
+            "wp_sensor": "I2_1",
+            "hp_valve": "Q2_0",
+            "wp_valve": "Q2_1",
+            "on_ilc": "TRUE",
+            "off_ilc": "TRUE"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+﻿station_id,station_name,station_index,step_no,action,wait_condition,timeout_ms,alarm_no,description
+S1,S1_上料工站,1,1,,,3000,,S1_上料工站 第 1 步
+S1,S1_上料工站,1,10,,,3000,,S1_上料工站 第 10 步
+S1,S1_上料工站,1,20,,,3000,20,S1_上料工站 第 20 步
+S1,S1_上料工站,1,30,,,3000,30,S1_上料工站 第 30 步
+S2,S2_搬运工站,2,1,,,3000,,S2_搬运工站 第 1 步
+S2,S2_搬运工站,2,10,,,3000,,S2_搬运工站 第 10 步

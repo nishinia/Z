@@ -1,0 +1,5 @@
+{
+    "ST": "放料盘有盘感应(bIN:=I2_1, Sensoe:=Sensor_Data.放料盘有盘感应);\n  Sensor_Data.放料盘有盘感应.tParaON:=T#100MS;\n  Sensor_Data.放料盘有盘感应.tParaOFF:=T#100MS;\n  收料盘满盘感应(bIN:=I2_3, Sensoe:=Sensor_Data.收料盘满盘感应);\n  Sensor_Data.收料盘满盘感应.tParaON:=T#3000MS;\n  Sensor_Data.收料盘满盘感应.tParaOFF:=T#3000MS;",
+    "内部变量": "名称\t数据类型\t初始值\t分配到\t保持\t常量\t注释\n放料盘有盘感应\tFB_Delay\tFalse\tFalse\n收料盘满盘感应\tFB_Delay\tFalse\tFalse",
+    "外部变量": "名称\t数据类型\t常量\t注释\nSensor_Data\tSesorName\nI4_0\tBOOL\nI5_4\tBOOL\nI2_3\tBOOL\nI2_4\tBOOL\nI2_1\tBOOL"
+}
